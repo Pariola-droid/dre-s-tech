@@ -1,0 +1,612 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariola - Frontend Engineer && UI designer.</title>
+
+   <!-- SEO Meta Tags -->
+    
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Pariola's Project Space">
+   <meta name="author" content="Dev Pariola">
+   <!-- for Facebook -->          
+   <meta property="og:url" content="https://pariola.tech">
+   <meta property="og:url" content="https://pariola.tech">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Dev Pariola">
+   <meta property="og:description" content="Pariola's Project Space">
+   <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C4D03AQHoyjYLyoX1Iw/profile-displayphoto-shrink_800_800/0/1613421123545?e=1619049600&v=beta&t=pEWSIKo4qUufv35uFGz4jpzxpP8vDclmUUAYIZ13_JM">
+   <meta property="og:site_name" content="Dev Pariola">
+   <!-- twitter -->
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="Dev Pariola">
+   <meta name="twitter:title" content="Dev Pariola">
+   <meta name="twitter:description" content="Pariola's Project Space">
+   <meta name="twitter:creator" content="@solesty">
+   <meta name="twitter:image" content="https://media-exp1.licdn.com/dms/image/C4D03AQHoyjYLyoX1Iw/profile-displayphoto-shrink_800_800/0/1613421123545?e=1619049600&v=beta&t=pEWSIKo4qUufv35uFGz4jpzxpP8vDclmUUAYIZ13_JM">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <!-- Favicon -->
+      <link href="https://media-exp1.licdn.com/dms/image/C4D03AQHoyjYLyoX1Iw/profile-displayphoto-shrink_800_800/0/1613421123545?e=1619049600&v=beta&t=pEWSIKo4qUufv35uFGz4jpzxpP8vDclmUUAYIZ13_JM" rel="icon">
+
+</head>
+<body>
+    <nav>
+
+        <div class="navInner">
+            <div class="logo animate__fadeInLeft">
+                <h1>
+                    Dre's Tech.
+                </h1>
+            </div> 
+            
+            
+            <div class="menuWrap animate__fadeInRight">
+                <div class="cageMenu">
+                    <div class="hamburger">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                    </div>
+
+                    <h3 class="menuT">
+                        Menu
+                    </h3>
+                </div>
+
+                <div class="_smallNav">
+                    <h1 class="menuH">Learn more <a href="http://">about us</a>, check out <a href="http://">our work</a>, the latest on <a href="http://">instagram</a> and <a href="http://">contact us.</a></h1>
+                </div>
+            </div>
+        </div>
+            
+    </nav>
+              
+    <main>
+
+        <!-- ====== Message ======= -->
+        <div class="message">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+        </div>
+
+        <div class="messageForm">
+             <div class="_mailWrapper">
+                  <div class="_mailText">
+                        <h1>
+                            Drop us a line
+                        </h1>
+                        <p>
+                            Got a question or proposal, or just want
+                            to say hello? Go ahead.
+                        </p>
+                  </div>
+
+                  <form class="_mailForm">
+                        <div class="_row">
+                              <div class="rowI">
+                                    <label for="name">
+                                        Your Name
+                                    </label>
+                                    <input type="text" name="name" placeholder="Enter your name"/>
+                              </div>
+                              <div class="rowI">
+                                    <label for="email">
+                                        Email Address
+                                    </label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email address" />                                
+                              </div>
+                        </div>
+
+                        <div class="_row">
+                            <div class="rowT">
+                                    <label for="name">
+                                        Your Message
+
+                                        <span>
+                                            <span class="count">
+                                                
+                                            </span>
+                                            
+                                        </span>
+                                    </label>
+                                <textarea type="text" name="message" id="message" placeholder="Briefly tell us about your project."></textarea>
+                              </div>
+                        </div>
+
+                        <div class="_row">
+                           <button type="submit" disabled={state.submitting} class="shoot">
+                              shoot 
+                              
+                              <img src="https://devdanielcodes.vercel.app/img/Arrow.442f3667.svg" alt=""/>
+                           </button>
+                        </div>
+                  </form>
+              </div>
+        </div>
+
+        <!-- ======= Landing ======== -->
+            <section class="landing"> 
+                <div class="curveL">
+                    <div class="curveT">
+                        <h3 class="spanT">
+                            <span class="animate__fadeInUp">design.</span>
+                            <span class="animate__fadeInUp">develop.</span>
+                            <span class="animate__fadeInUp">deliver.</span>
+                        </h3>
+
+                        <p class="PT animate__fadeInUp">
+                            We help startups and enterprises launch and scale with digital products and effective strategies that makes them standout in the market both online and offline.
+                        </p>
+
+                        <p class="PT2 animate__fadeInUp">
+                           Check out our <a href="http://">recent work</a> or learn more on <a href="http://">what we do.</a>
+                        </p>
+                    </div>
+
+                    <div class="curveIMG">
+                        <div class="imgBox">
+                            <img src="https://enyata.com/images/what-we-do-img.png" alt="">
+                        </div>
+
+                        <div class="attatch">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+
+                            <p>
+                                Best in class engineering for the finest ideas.
+                            </p>                            
+                        </div>                                               
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ==== division ======= -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,192L34.3,213.3C68.6,235,137,277,206,250.7C274.3,224,343,128,411,80C480,32,549,32,617,69.3C685.7,107,754,181,823,213.3C891.4,245,960,235,1029,208C1097.1,181,1166,139,1234,128C1302.9,117,1371,139,1406,149.3L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+            
+            <!-- ======= Display ======== -->
+            <section class="display">
+                <div class="textD" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <h5>
+                        SUCCESS STORIES
+                    </h5>
+                    <h3>
+                        Projects we helped our clients to achieve success.
+                    </h3>
+                </div>
+                <ul class="projects">
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImg">
+                                <img src="https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg" alt="">
+                            </div>
+    
+                            <div class="desc">
+                                <h3>
+                                    Tony Elumelu Website
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImgSmall">
+                                <img src="https://cregital.com/wp-content/uploads/2020/03/heirs-holdings.jpg" alt="">
+                            </div>
+                            
+                            <div class="desc">
+                                <h3>
+                                    Heirs Holding
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImgSmall">
+                                <img src="https://cregital.com/wp-content/uploads/2016/02/Zenith-HQ.jpg" alt="">
+                            </div>
+                            
+                            <div class="desc">
+                                <h3>
+                                    Zenith Bank
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>    
+                    </li>
+    
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImg">
+                                <img src="https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg" alt="">
+                            </div>
+                            
+                            <div class="desc">
+                                <h3>
+                                    Tony Elumelu Website
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImg">
+                                <img src="https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg" alt="">
+                            </div>
+                            
+                            <div class="desc">
+                                <h3>
+                                    Tony Elumelu Website
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <a href="http://">
+                            <div class="descImgSmall">
+                                <img src="https://cregital.com/wp-content/uploads/2016/02/Zenith-HQ.jpg" alt="">
+                            </div>
+                            
+                            <div class="desc">
+                                <h3>
+                                    Zenith Bank
+                                </h3>
+                                <p>
+                                    website
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ====== who are we ====== -->
+            <section class="who">
+                <div class="textD" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <h5>
+                        who are we
+                    </h5>
+                    <h3>
+                        We make custom Mobile Apps, Web & Enterprise Solutions for Startups, Enterprises & Mid-Scale Businesses.
+                    </h3>
+                    <p>
+                        <a href="http://">read more +</a>
+                    </p>
+                </div>
+
+                <article  data-aos="fade-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <p>
+                        The top-notch and preeminent Web and Mobile App Development Company of India with its global presence in USA, MindInventory is first-rate choice of the clients worldwide. With sheer customer satisfaction in mind, we are profoundly dedicated to developing highly intriguing apps that strictly meet the business requirements and catering a wide spectrum of projects.
+                    </p>
+                </article>
+
+                <div class="exp">
+                    <div class="expWrap">
+                        <h3 data-aos="fade-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                            <span>160+</span>
+                            <p>professionals</p>
+                         </h3>
+
+                        <h3 data-aos="fade-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                            <span>5+</span>
+                            <p>years of average experience</p>
+                        </h3>
+
+                        <h3 data-aos="fade-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                            <span>100M+</span>
+                            <p>investments received clients </p>
+                        </h3>
+                    </div>                  
+                </div>
+            </section>
+
+            <!-- ===== trending ======= -->
+            <section class="trend" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="800" data-aos-easing="ease-in-out">
+                <div class="trendWrap">
+                    <div class="textD">
+                        <h5>
+                            trending techs
+                        </h5>                   
+                    </div>
+                    <div class="list_trend">
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/flutter.e69eaaa3.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/golang.0ed41fab.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/react.47a88250.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/flutter.e69eaaa3.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/firebase.60917cff.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                        <span>
+                            <img src="https://www.mindinventory.com/static/media/docker.4ac45108.svg" alt="flutter_dre">
+                            <p>flutter</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= services ======== -->
+            <section class="services">
+                <div class="textD" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <h5>
+                        Services
+                    </h5>
+                    <h3>
+                        What we'll offer.
+                    </h3>
+                </div>
+
+                <div class="service_s">
+                    <div class="serve" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="800" data-aos-easing="ease-in-out">
+                        <div class="headS">
+                            <h2>
+                                Branding
+                            </h2>
+                            <span class="span_3">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </span>
+                        </div>
+
+                        <article class="article_3">
+                            <p>
+                               When it comes to application design or website design the burning question is how it should not only represent what your business is all about but to also allow users to easily navigate through the complete solution without having to learn new things to use the app.
+                            </p>
+                            <p>
+                                With average user attention span dropping from 12 seconds to 10 we understand that the onus is on how the solution makes the user feel when they first interact hence we follow the latest trends and understand what it requires to design successful apps and web solutions.
+                            </p>
+
+                            <div class="techIMG">
+                                <img src="https://www.mindinventory.com/static/media/figma.b708b2af.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/xd.30776f24.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/zeplin.56322834.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/invision.df086033.webp" alt="">
+                            </div>
+                            
+                        </article>
+                    </div>
+
+                    <div class="serve" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="800" data-aos-easing="ease-in-out">
+                        <div class="headS">
+                            <h2>
+                                Web development
+                            </h2>
+                            <span class="span_2">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </span>
+                        </div>
+
+                        <article class="article_2">
+                            <p>
+                               A web app, dashboard or admin panel nowadays is a must for any business who is looking to expand & grow in this ever changing digital era of machine learning, artificial intelligence and smart cities where users are expecting their day to day activities to be done online.
+                            </p>
+                            <p>
+                                Whether you are looking to develop a CMS, eCommerce or an admin dashboard, we do have a large team who is not only expert in these areas but also passionate towards learning new technologies so that we can provide you a consultation if you are looking to migrate your legacy systems.
+                            </p>
+
+                            <div class="techIMG">
+                                <img src="https://www.mindinventory.com/static/media/angular.eb050347.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/node.7ded16d6.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/php.e6ee094e.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/laravel.d9e956e7.webp" alt="">
+                            </div>
+                            
+                        </article>
+                    </div>
+
+                    <div class="serve" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="800" data-aos-easing="ease-in-out">
+                        <div class="headS">
+                            <h2>
+                                app development
+                            </h2>
+                            <span class="span_1">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </span>
+                        </div>
+
+                        <article class="article_1">
+                            <p>
+                                With so many ways to build mobile apps, we have expertise in choosing what’s a best solution for your mobile app development strategy either its in Flutter or with native iOS and Android.
+                            </p>
+                            <p>
+                                Having delivered more than 700+ mobile applications and some of them being featured in respective app stores we understand what it requires to build a mobile app that is not only unique but easy to use and acceptable for users.
+                            </p>
+
+                            <div class="techIMG">
+                                <img src="https://www.mindinventory.com/static/media/react.4e28012a.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/android.4dc32be6.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/Ionic.be3d180c.webp" alt="">
+                                <img src="https://www.mindinventory.com/static/media/android.4dc32be6.webp" alt="">
+                            </div>
+                            
+                        </article>
+                    </div>                    
+                </div>          
+                
+            </section>
+
+            <!-- ====== Blog ======= -->
+            <section class="blog">
+                <div class="textD" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <h5>
+                        news and blog
+                    </h5>                   
+                </div>
+                <div class="blogWrap">
+                    <a href="#0" class="blogBlock" data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                        <span class="blogI">
+                            <img src="https://www.mindinventory.com/blog/wp-content/uploads/2021/05/react-native-app-development-cost.png" alt="">
+                        </span>
+
+                        <span class="blogT">
+                            <h4>
+                                how much does it cost to build me?
+                            </h4>
+                        </span>
+                    </a>
+
+                    <a href="#0" class="blogBlock" data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                          <span class="blogI">
+                            <img src="https://www.mindinventory.com/blog/wp-content/uploads/2021/05/react-libraries.png" alt="">
+                        </span>
+
+                        <span class="blogT">
+                            <h4>
+                                how much does it cost to build me?
+                            </h4>
+                        </span>
+                    </a>
+
+                    <a href="#0" class="blogBlock" data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                          <span class="blogI">
+                            <img src="https://www.mindinventory.com/blog/wp-content/uploads/2021/05/whitespace-in-ui-design.png" alt="">
+                        </span>
+
+                        <span class="blogT">
+                            <h4>
+                                how much does it cost to build me?
+                            </h4>
+                        </span>
+                    </a>
+
+                    <a href="#0" class="blogBlock" data-aos="zoom-in-up" data-aos-offset="150" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                          <span class="blogI">
+                            <img src="https://www.mindinventory.com/blog/wp-content/uploads/2021/04/how-to-develop-a-gps-navigation-app.png" alt="">
+                        </span>
+
+                        <span class="blogT">
+                            <h4>
+                                how much does it cost to build me?
+                            </h4>
+                        </span>
+                    </a>
+                </div>
+
+                 <p class="exploreB">
+                    <a href="http://">explore more +</a>
+                </p>
+            </section>
+
+            <!-- ======= Get in touch --- CTA -->
+            <section class="cta">
+                <div class="textD" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="600" data-aos-easing="ease-in-out">
+                    <h5>
+                        get in touch
+                    </h5> 
+                    <h3>
+                        say hello!
+                    </h3>                  
+                </div>
+                <div class="ctaWrap" data-aos="fade-up" data-aos-offset="100" data-aos-delay="40" data-aos-duration="800" data-aos-easing="ease-in-out">
+                    <p>
+                        Contact us to find out how we can help you. If it’s easier you can email us at <a href="mailto:">hello@dretech.com</a> or call <a href="tel:+">(+234) 08020965367.</a> Download the <a href="!0" download="Dre's Tech Brochure">Dre's Tech brochure.pdf</a> (5mb).
+                    </p>
+                </div>
+            </section>
+
+
+        <!-- ======= Division ======== -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,96L34.3,112C68.6,128,137,160,206,149.3C274.3,139,343,85,411,101.3C480,117,549,203,617,229.3C685.7,256,754,224,823,176C891.4,128,960,64,1029,85.3C1097.1,107,1166,213,1234,229.3C1302.9,245,1371,171,1406,133.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        <!-- ======= Division ======== -->
+             
+        <div class="cookies">
+            <p>
+                We use <a href="http://">cookies</a> to enhance your experience.
+            </p>
+            <span class="got_it">Got it</span>
+        </div>
+
+    </main>    
+
+    <footer>
+        <div class="footWrap">
+            <div class="headF">
+                <h1>
+                    dre's tech.
+                </h1>
+            </div>
+
+            <ul class="uList">
+                <li><a href="http://">about</a></li>
+                <li><a href="http://">product</a></li>
+                <li><a href="http://">blog</a></li>
+                <li><a href="http://">careers</a></li>
+                <li><a href="http://">support</a></li>
+            </ul>
+
+            <ul class="ulSocial">
+                <li><a href="http://"><ion-icon name="logo-instagram"></ion-icon></a></li>                
+                <li><a href="http://"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="http://"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="http://"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="http://"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+
+            <div class="caption">
+                <h3>
+                    Hello from Home. 🏡
+                </h3>
+                <p>
+                    © 2021 Dre's Tech. View our Privacy Policy and Terms of Service.
+                </p>
+            </div>
+        </div>
+    </footer>                   
+  
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+  </body>
+  </html>
+                    
+            
+                        
+

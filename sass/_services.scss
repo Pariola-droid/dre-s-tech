@@ -1,0 +1,292 @@
+.services {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+
+    .textD {
+        width: 90%;
+        margin-left: auto;
+        height: fit-content;
+        margin-bottom: 1rem;
+
+        h5 {
+            letter-spacing: 10px;
+            color: #24b3fb;
+            font-weight: bold;            
+            text-transform: uppercase;
+            line-height: 5;
+        }
+        h3 {
+            font-size: 4rem;
+            max-width: 600px;
+            line-height: 46px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #2c2c2c;
+            color: transparent;
+            -webkit-user-select: none;
+        }
+    }
+
+    .service_s {
+        width: 90%;
+        height: fit-content;
+        transition: .4s height;
+        margin-left: auto;
+        // background-color: #24b3fb;
+
+        .serve {
+            width: 900px;
+            height: auto;
+            // background-color: #24b3fb;
+
+            .headS {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100px;
+                width: 100%;
+                // background-color: #90bd16;
+                text-transform: capitalize;
+
+                h2 {
+                    font-size: 3.2rem;
+                    display: inline-block;
+                    font-weight: 600;
+                    color: #2c2c2cfa;
+                }
+
+                span {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 100px;
+                    border: 1px solid #2c2c2c17;
+                    display: grid;
+                    place-items: center;
+                    cursor: pointer;
+                    padding-top: .2rem;
+                    background-color: #52515111;
+                    transition: all .4s;
+                    -webkit-user-select: none;
+
+                    ion-icon {
+                        font-size: 2rem;
+                        color: #24b3fb;
+                    }
+                }
+                .span_1.turn,
+                .span_2.turn,
+                .span_3.turn {
+                    transform: rotate(180deg);
+                }
+            }
+
+            article {
+                height: 0px;
+                width: 0%;
+                overflow: hidden;
+               -webkit-user-select: none;
+
+                p {
+                    line-height: 2;
+                    margin-bottom: 1rem;
+                }      
+                
+                .techIMG {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin: 2rem 0;
+
+                    & img {
+                        height: 80px;
+                    }
+                }
+            }
+            .article_1.open,
+            .article_2.open,
+            .article_3.open {
+                animation-name: article;
+                animation-timing-function: linear;
+                animation-duration: .45s;	
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+
+@keyframes article {	
+	to {
+		height: fit-content;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:1000px) {
+
+    .services {
+        
+        .service_s {
+            // background-color: #24b3fb;
+
+            .serve {
+                width: 90%;
+                height: auto;
+                // background-color: #24b3fb;
+
+                .headS {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 70px;
+                    width: 100%;
+                    // background-color: #90bd16;
+                    text-transform: capitalize;
+
+                    h2 {
+                            font-size: 22px;
+                            line-height: 2rem;
+                    }
+
+                    span {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 100px;
+                        border: 1px solid #2c2c2c17;
+                        display: grid;
+                        place-items: center;
+                        cursor: pointer;
+                        padding-top: .2rem;
+                        background-color: #52515111;
+                        transition: all .4s;
+
+                        ion-icon {
+                            font-size: 2rem;
+                            color: #24b3fb;
+                        }
+                    }
+                }
+
+                article {
+
+                    p {                        
+                        font-size: .9rem;
+
+                        &:not(:last-child) {
+                            margin-top: .5rem;
+                        }
+                    }                
+                }
+            }
+        }
+
+    }
+ 
+}
+
+@media(max-width:950px) {
+
+    .services {
+        
+        .service_s {
+
+            .serve {
+
+                article {
+
+                .techIMG {
+                    width: 60%;
+
+                    & img {
+                        height: 70px;
+
+                        // &:not(:last-of-type) {
+                        //     margin-right: 2rem;
+                        // }
+                    }
+                }  
+
+                }
+            }
+        }
+
+    }
+ 
+}
+
+@media(max-width:700px) {
+
+    .services {
+
+        .service_s {
+
+            .serve {
+
+                article {
+
+                .techIMG {
+                    width: 80%;
+
+                    & img {
+                        height: 60px;
+                    }
+                }  
+
+                }
+            }
+        }
+
+
+    }
+ 
+}
+
+@media(max-width:600px) {
+
+    .services {
+        
+        .textD { 
+            
+            h5 {
+                line-height: 4;
+            }
+           
+            h3 {
+                font-size: 1.8rem;
+                width: 95%;
+                line-height: 1.4;
+            }
+        }
+
+        .service_s {
+
+            .serve {
+
+                article {
+
+                    & p {
+                        font-size: .9rem;
+                    }
+
+                .techIMG {
+                    width: 100%;
+
+                    & img {
+                        height: 60px;
+                    }
+                }  
+
+                }
+            }
+        }
+
+
+    }
+ 
+}

@@ -1,0 +1,99 @@
+.trend {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+
+    .trendWrap {
+        margin-left: auto;
+        width: 90%;
+
+        .textD {
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 2rem;
+
+            h5 {
+                letter-spacing: 10px;            
+                line-height: 5;
+                color: #24b3fb;
+                font-weight: bold;
+                text-transform: uppercase;
+            }       
+    }
+
+        .list_trend {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 800px;
+            height: fit-content;
+            // background-color: aqua;
+            text-align: center;
+
+            & span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                cursor: pointer;
+            }
+
+            // & img {
+            //     height: 60px;
+            // }
+
+            & p {
+                margin-top: auto;
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+
+    .trend {
+        margin-top: 2rem;
+      
+        .trendWrap {
+            margin-left: auto;
+            width: 100%;
+
+            .textD {
+                width: 90%;
+                margin-left: auto;               
+            }
+
+            .list_trend {
+                width: 90%;
+                flex-wrap: wrap;   
+                margin: 0 auto;     
+                
+                & span {
+                    width: 50%;
+
+                     &:nth-child(2) {
+                            img {                                
+                                height: 40px;
+                            }
+                        }
+                     &:nth-child(5) {
+                            img {                                
+                                height: 60px;
+                            }
+                        }
+
+                    img {
+                        height: 55px;                       
+                    }
+                    
+                    &:not(:last-of-type) {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+    }
+
+    }
+ 
+}

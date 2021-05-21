@@ -1,0 +1,443 @@
+.message {
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: #212529;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
+  border-radius: 100%;
+   display: grid;
+   place-items: center;
+   cursor: pointer;
+   border: 2px solid #f5f5f5;
+   animation-name: sms;
+        animation-timing-function: linear;
+        animation-duration: 1s;	
+        animation-fill-mode: forwards;	
+        animation-iteration-count: infinite;
+        transition: .5s ease-in;
+         z-index: 9999999999;
+
+   &:hover {
+     transform: scale(1.1);
+   }
+
+   ion-icon {
+     color: #f5f5f5;
+     font-size: 1.3rem;
+   }
+}
+
+@keyframes sms {
+to {		
+    box-shadow: 0 10px 53px 0 #212529;		
+	}
+}
+
+.messageForm {
+  transform: scale(0);
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0; 
+  background-color: #212529;
+  height: 100vh;
+  color: #f5f5f5;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+
+  ._mailWrapper {
+        width: 1092.800px;
+        height: 503.047px;
+        // background: green;
+        margin-top: 3rem;
+        display: grid;
+        place-items: center;
+
+        ._mailText {
+            text-align: center;
+            margin-bottom: 5.2em;
+            width: auto;
+            // margin-top: 1rem;
+                        
+            h1 {
+                font-size: 2.5em;
+                font-weight: bold;
+                line-height: 1.3;
+                max-width: unset;
+                color: #f5f5f5;
+            }
+            p {
+                margin: 0 auto;
+                font-size: 1.2em;
+                line-height: 1.2;
+                margin-top: 15px;
+                letter-spacing: 0.02em;
+                width: 32vw;
+                 max-width: 701px;
+                 font-family: 'Josefin Sans', sans-serif;
+                color: #f5f5f5;
+                opacity: .7;
+            }
+        }
+
+        ._mailForm {
+            width: 60%;
+            min-width: 500px;
+            // background: grey;
+            height: 309.016px;
+            margin-top: -1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            ._row {
+                width: 100%;
+                height: auto;
+                // background: pink;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+
+                .rowI {
+                    width: 45%;
+                    height: auto;
+                    display: inline-block;
+
+                    label {
+                        display: inline-block;
+                        margin-bottom: 5px;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: .9rem;
+                           font-weight: 600;
+                           color: #f5f5f5;
+                    }
+                    input {
+                        font-weight: 200;
+                        width: 100%;
+                        height: 2rem;
+                        border: 0;
+                        outline: 0;
+                        background: transparent;
+                       border-bottom: 1px solid #f5f5f594;
+                        // border-bottom: 1.5px solid #3d155f;
+                        -webkit-writing-mode: horizontal-tb !important;
+                        text-rendering: auto;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        text-indent: 0px;
+                        text-shadow: none;
+                        display: inline-block;
+                        text-align: start;
+                        appearance: textfield;
+                        -webkit-rtl-ordering: logical;
+                        cursor: text;
+                        margin-top: .5em;
+                        font-size: 1.1rem;
+                        padding: 1rem;
+                        padding-left: 0px;
+                        color: #f5f5f5;
+                        // opacity: 0.7;
+                        caret-color: #f5f5f594;
+                    }
+                        
+                    input::placeholder {
+                        opacity: 0.7;
+                        color: #f5f5f5;
+                        font-size: 1rem;
+                        background: none;
+                        font-family: 'Josefin Sans', sans-serif;
+                    }   
+                    
+                    input:focus {
+                        border-bottom: 1px solid #24b3fb8f;
+                    }
+                }  
+                 
+                .rowT {
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+
+                    label {
+                        // display: inline-block;
+                        margin-bottom: 5px;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        color: #f5f5f5;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+
+                    textarea::placeholder {
+                        opacity: 0.6;
+                        color: #f5f5f5;
+                        font-size: 1.1rem;
+                        background: none;
+                        font-family: 'Josefin Sans', sans-serif;
+                    } 
+
+                    textarea:focus {
+                        border-bottom: 1px solid #24b3fb8f;
+                        // color: #474747;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: 4.8rem;
+                        display: block;
+                         border: 0;
+                        outline: 0;
+                        background: transparent;
+                        border-bottom: 1px solid #f5f5f594;
+                        cursor: text;
+                        margin-top: -.3em;
+                        font-size: 1rem;
+                        padding: 1rem;
+                        padding-left: 0px;
+                        color: #f5f5f5;
+                        // opacity: 0.6;
+                        caret-color: #f5f5f5;
+                        resize: none;
+                        font-family: 'Poppins', sans-serif;
+                    }      
+                }
+
+                .shoot {
+                    text-align: center;
+                    font-family: 'Josefin Sans', sans-serif;
+                    min-width: 23.222em;
+                    position: relative;
+                    font-weight: bold;
+                    -webkit-text-transform: uppercase;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    font-size: 0.8em;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-flexbox;
+                    display: inline-flex;
+                    overflow: hidden;
+                    background: transparent;
+                    white-space: nowrap;
+                    -webkit-tap-highlight-color: transparent;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1.6em 3em;
+                    margin: 0 auto;
+                    margin-top: 1.2rem;
+                    color: #24b4fb;
+                    border: 1px solid currentColor;  
+                    opacity: 1; 
+                     -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+                    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+                    -webkit-transition-property: -webkit-transform, box-shadow;
+                    -webkit-transition-property: transform, box-shadow;
+                    transition-property: transform, box-shadow;
+                    box-shadow: 0 5px 10px rgba(0,0,0,.05);
+                    outline: none;
+                    cursor: pointer;
+                     
+                     img {
+                         margin-left: .5em;
+                         display: none;
+                     }
+                }
+
+                 .shoot:hover {
+                    opacity: .7;
+                    z-index: 1;
+                    box-shadow: 0 5px 10px rgba(0,0,0,.05);
+                    transform: scale(0.96);
+                }               
+            }
+        }
+    }
+}
+
+@keyframes smsForm {
+	0% {
+		transform: scale(0);	
+    opacity: 0;
+     width: 0%;
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;
+     width: 100%;
+	}
+}
+
+.messageForm.open {
+  animation-name: smsForm;
+        animation-timing-function: linear;
+        animation-duration: .5s;	
+        animation-fill-mode: forwards;
+}
+
+
+@media(max-width:1100px) {
+
+     .messageForm {
+        height: 100vh;
+        width: 100%;
+        // background: #f5f5f5;
+        display: grid;
+        place-items: center;
+
+    ._mailWrapper {
+        // width: 85%;
+        width: 85%;
+        height: auto;
+        margin: 4rem auto;
+        // background: green;
+        // margin-top: 10rem;
+        display: grid;
+        place-items: center;
+
+         ._mailText {
+            text-align: center;
+            // margin: 0 auto;
+            margin-bottom: 5.2em;
+            width: 100%;
+            min-width: 300px;
+            margin-top: 2rem;
+
+            p {
+                 min-width: 55%;
+            }
+            
+        }
+
+        ._mailForm {
+            width: 60%;
+            min-width: 500px;                           
+            
+        }
+    }
+
+
+}
+
+}
+
+@media(max-width:600px) {
+
+.message {
+  bottom: 30px;
+  right: 20px;  
+}             
+
+.messageForm {
+    height: 100vh;
+    width: 100%;
+    // background: #f5f5f5;
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+
+    ._mailWrapper {
+        // width: 85%;
+        width: 85%;
+        height: auto;
+        margin: 2rem auto;
+        // background: green;
+        margin-bottom: 5rem;
+        display: grid;
+        place-items: center;
+
+         ._mailText {
+            text-align: left;
+            // margin: 0 auto;
+            margin-bottom: 5.2em;
+            width: 100%;
+            min-width: 300px;
+            margin-top: 2rem;
+                        
+            h1 {
+                font-size: 2.2em;
+                font-weight: bold;
+                line-height: 1.3;
+                // max-width: 300px;
+                // color: #f5f5f5;
+                // margin: 0 auto;
+                margin-top: 1rem;
+            }
+            p {
+                // margin: 0 auto;
+                font-size: 1.2em;
+                line-height: 1.2;
+                // margin: 0 auto;
+                margin-top: 2rem;
+                letter-spacing: 0.02em;
+                width: 100%;
+                //  max-width: 300px;
+                 font-family: 'Josefin Sans', sans-serif;
+                // color: $nav-color;
+                opacity: .7;
+            }
+        }
+
+        ._mailForm {
+            width: 100%;
+            min-width: 260px;
+            // background: grey;
+            height: auto;
+            margin-top: -2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+             ._row {
+                 display: block;
+               
+                 .rowI {
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+
+                    input {
+                        margin-bottom: 2em;
+                    }
+                 }
+                 
+                   .rowT {
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+
+                    textarea {
+                         height: 8rem;
+                         margin-bottom: 1.5rem;
+                    }
+                   }
+
+                    .shoot {
+                        width: 100%;
+                        min-width: 260px;       
+                        margin-bottom: 2rem;                         
+                    }
+             }
+        }
+    }
+    
+}   
+
+}
